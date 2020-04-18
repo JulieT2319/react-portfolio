@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from "../components/Card";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
 import { projects } from '../utils/projects';
 import M from "materialize-css";
 
@@ -33,6 +34,7 @@ export default class Main extends Component {
             }
           </div>
         </main>
+        <Footer />
       </div>
     )
   }
