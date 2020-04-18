@@ -8,7 +8,9 @@ import M from "materialize-css";
 export default class Main extends Component {
 
   state = {
-
+    about: "",
+    contact: "",
+    portfolio: ""
   }
   componentDidMount() {
     // Auto initialize all the things!
@@ -18,7 +20,11 @@ export default class Main extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar
+          about={this.state.about}
+          contact={this.state.contact}
+          portfolio={this.state.contact}
+        />
         <main className="center container">
           <div class="row">
             {projects.map(project => (
