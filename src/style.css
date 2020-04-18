@@ -1,0 +1,64 @@
+body {
+  background-image: url(./aidabg.jpg);
+  /*image from shutterstock.com, original imaged compressed with img2go.com*/
+  background-color: #d6dce3;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* sticky footer code for */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.rounded-bottom {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.rounded-top {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.rounded {
+  border-bottom-right-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  border-top-right-radius: 20px !important;
+  border-top-left-radius: 20px !important;
+}
+.rounded-right {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.title-bg {
+  /* background-image: url(aidabanner.jpg); */
+  background-color: rgb(253, 240, 223);
+  opacity: .65;
+  width: 100%;
+  height: 1.5em !important;
+}
+
+.font-xstitch {
+  font-family: "kingthings_xstitchregular", "Times New Roman", serif;
+  font-weight: 400 !important;
+}
+
+.card-title {
+  font-size: 25px !important;
+  font-weight: 600 !important;
+}
+
+.pad-bottom {
+  padding-bottom: 2.5em;
+}
+.pad-left{
+  padding-left: 2.5em;
+}
+
+.sidnav{
+	font-weight: 600 !important;
+}
