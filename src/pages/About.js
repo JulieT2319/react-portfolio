@@ -5,15 +5,15 @@ import Headshot from "../img/julie.jpg";
 export default function About() {
 
   return (
-    <div class="container teal lighten-4 rounded">
-      <div class="row">
-        <h2 class="center cyan rounded-top darken-3 white-text font-xstitch">
+    <div className="container teal lighten-4 rounded">
+      <div className="row">
+        <h2 className="center cyan rounded-top darken-3 white-text font-xstitch">
           About Me
       </h2>
-        <div class="col s12 m4">
-          <img src={Headshot} class="responsive-img rounded" alt="Julie Theriault head shot" />
+        <div className="col s12 m4">
+          <img src={Headshot} className="responsive-img rounded" alt="Julie Theriault head shot" />
         </div>
-        <div class="col s12 m8">
+        <div className="col s12 m8">
           <p>
             I graduated from Brigham Young University in 2011. After
             graduation I took a job at a local market research firm, where I
