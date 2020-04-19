@@ -1,5 +1,5 @@
 body {
-  background-image: url(./aidabg.jpg);
+  background-image: linear-gradient( rgba(241,200,209, .15), rgba(220,112,136,.15), rgba(79,7,23,.15)), url(./aidabg.jpg);
   /*image from shutterstock.com, original imaged compressed with img2go.com*/
   background-color: #d6dce3;
   background-repeat: no-repeat;
