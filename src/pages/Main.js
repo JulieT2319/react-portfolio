@@ -21,11 +21,19 @@ export default class Main extends Component {
     // Auto initialize all the things!
     M.AutoInit();
   }
-
+  navClick = event => {
+    this.setState({
+      about: "",
+      contact: "",
+      portfolio: "",
+      [event.target.name]: "active"
+    })
+  }
   render() {
     return (
       <Router>
         <Navbar
+          navClick={this.navClick}
           about={this.state.about}
           contact={this.state.contact}
           portfolio={this.state.contact}
