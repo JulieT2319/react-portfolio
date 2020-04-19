@@ -11,15 +11,15 @@ export default function Contact() {
         <div className="col s12 ">
           <form className="rounded center" action="https://formspree.io/mjvylzjq" method="POST">
             <div className="red lighten-5">
-              <label for="ContactFormName">Name:</label>
+              <label htmlfor="ContactFormName">Name:</label>
               <input name="name" type="text" id="ContactFormName" />
             </div>
             <div className="red lighten-5">
-              <label for="ContactFormEmail">Email:</label>
+              <label htmlfor="ContactFormEmail">Email:</label>
               <input name="fromemail" type="email" id="ContactFormEmail" />
             </div>
             <div className="red lighten-5">
-              <label for="ContactFormMessage">Message:</label>
+              <label htmlfor="ContactFormMessage">Message:</label>
               <textarea name="message" id="ContactFormMessage" rows="10"></textarea>
             </div>
             <hr />
