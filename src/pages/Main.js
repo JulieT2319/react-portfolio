@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import Card from "../components/Card";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer"
-import { projects } from '../utils/projects';
+import Portfolio from "./Portfolio"
+import About from "./About"
 import M from "materialize-css";
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 export default class Main extends Component {
 
   state = {
@@ -19,29 +23,27 @@ export default class Main extends Component {
 
   render() {
     return (
-      <div>
+      <Router>
         <Navbar
           about={this.state.about}
           contact={this.state.contact}
           portfolio={this.state.contact}
         />
         <main className="center container">
-          <div class="row">
-            {projects.map(project => (
-              <Card
-                title={project.title}
-                description={project.description}
-                screenshot={project.screenshot}
-                repo={project.repo}
-                deployment={project.deployment}
-              />
-            )
-            )
-            }
-          </div>
+          <Switch>
+            <Route path="/portfolio">
+              <Portfolio />
+            </Route>
+            <Route path="/contact">
+              <Portfolio />
+            </Route>
+            <Route path="/">
+              <About />
+            </Route>
+          </Switch>
         </main>
         <Footer />
-      </div>
+      </Router>
     )
   }
 }
