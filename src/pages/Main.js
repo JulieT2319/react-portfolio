@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer"
-import Portfolio from "./Portfolio"
-import About from "./About"
+import Footer from "../components/Footer";
+import Portfolio from "./Portfolio";
+import About from "./About";
+import Contact from "./Contact";
 import M from "materialize-css";
 import {
   BrowserRouter as Router,
@@ -29,13 +30,13 @@ export default class Main extends Component {
           contact={this.state.contact}
           portfolio={this.state.contact}
         />
-        <main className="center container">
+        <main >
           <Switch>
             <Route path="/portfolio">
               <Portfolio />
             </Route>
             <Route path="/contact">
-              <Portfolio />
+              <Contact />
             </Route>
             <Route path="/">
               <About />
