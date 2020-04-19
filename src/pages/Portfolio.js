@@ -6,8 +6,8 @@ import { projects } from '../utils/projects';
 export default function Portfolio() {
 
   return (
-    <div class="container ">
-      <div class="row" >
+    <div className="container ">
+      <div className="row" >
         {
           projects.map(project => (
             <Card
